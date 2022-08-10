@@ -3,11 +3,23 @@ gracz2_wynik = 0
 
 opcje = ['papier', 'kamien', 'nozyczki']
 
+""" 
+Function check if the choice is on the list opcje 
+Input = [str]
+Output = [str]
+"""
+
 def pobierz_wybor(gracz):
         while True:
                 wybor_gracza = input(f'{gracz} podaj swoj wybor:')
                 if wybor_gracza in opcje:
                         return wybor_gracza
+
+""" 
+Function check the outcome of the both player choices 
+Input = [str, str]
+Output = [str]
+"""
 
 def sprawdz_wynik(wybor_gracza1, wybor_gracza2):
         if wybor_gracza1 == wybor_gracza2:
